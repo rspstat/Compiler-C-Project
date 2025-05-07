@@ -1,4 +1,4 @@
-# compiler
+# Compiler
 
 ```
 .l, .y 파일들은 같은 폴더 안에 있어야함
