@@ -1,50 +1,14 @@
-/* 배열 사용·최댓값/최솟값/합계·비트 연산·삼항 연산 테스트 */
-
-int main() {
-    int arr[10];
-    int i, max, min, sum;
-
-    /* 배열 초기화: 제곱수 */
-    for (i = 0; i < 10; i++) {
-        arr[i] = i * i;          /* 0 1 4 9 ... 81 */
+main()
+{
+    시작값 = 1;
+    끝값 = 10;
+    합계 = 0;
+    카운터 = 시작값;
+    
+    while (카운터 <= 끝값) {
+        합계 = 합계 + 카운터;
+        카운터++;
     }
-
-    /* 배열 값 출력 */
-    for (i = 0; i < 10; i++) {
-        print(arr[i]);
-    }
-
-    /* 최대/최소/합계 */
-    max = arr[0];
-    min = arr[0];
-    sum = 0;
-    for (i = 0; i < 10; i++) {
-        if (arr[i] > max) max = arr[i];
-        if (arr[i] < min) min = arr[i];
-        sum += arr[i];
-    }
-    print(max);   /* 81 */
-    print(min);   /* 0  */
-    print(sum);   /* 285 */
-
-    /* 비트 연산 예 */
-    int a = 12;      /* 1100 */
-    int b = 10;      /* 1010 */
-    print(a & b);    /* 8  */
-    print(a | b);    /* 14 */
-    print(a ^ b);    /* 6  */
-    print(~a);       /* -13 */
-    print(a << 2);   /* 48 */
-    print(a >> 1);   /* 6  */
-
-    /* 삼항 연산자 */
-    int x = 5, y = 10;
-    int result = (x > y) ? x : y;
-    print(result);   /* 10 */
-
-    /* 복잡한 수식 */
-    int complex = (a + b) * (x - y) / 2 + arr[5];
-    print(complex);  /* -30 */
-
-    return 0;
+    
+    평균값 = 합계 / 끝값;
 }
