@@ -1,0 +1,244 @@
+/* if / while / for / do-while 및 break·continue 테스트 */
+
+int main() {
+    int i, sum, n;
+    n = 10;
+    sum = 0;
+
+    /* if-else */
+    if (n > 5) {
+        print(1);
+    } else {
+        print(0);
+    }
+
+    /* while: 1~n 합계 */
+    i = 1;a/* Advanced features test program */
+
+int global_var = 100;
+int result;
+
+// Function to calculate factorial
+int factorial(int n) {
+    if (n <= 1) {
+        return 1;
+    } else {
+        return n * factorial(n - 1);
+    }
+}
+
+// Function to find maximum of two numbers
+int max(int a, int b) {
+    return (a > b) ? a : b;
+}
+
+// Function to demonstrate various operations
+void demonstrate_operations() {
+    int x = 5;
+    int y = 3;
+    int z;
+    
+    printf("=== Arithmetic Operations ===\n");
+    z = x + y;
+    printf("Addition: %d + %d = %d\n", x, y, z);
+    
+    z = x - y;
+    printf("Subtraction: %d - %d = %d\n", x, y, z);
+    
+    z = x * y;
+    printf("Multiplication: %d * %d = %d\n", x, y, z);
+    
+    z = x / y;
+    printf("Division: %d / %d = %d\n", x, y, z);
+    
+    z = x % y;
+    printf("Modulo: %d %% %d = %d\n", x, y, z);
+    
+    printf("\n=== Increment/Decrement Operations ===\n");
+    printf("x before increment: %d\n", x);
+    x++;
+    printf("x after post-increment: %d\n", x);
+    
+    ++x;
+    printf("x after pre-increment: %d\n", x);
+    
+    x--;
+    printf("x after post-decrement: %d\n", x);
+    
+    --x;
+    printf("x after pre-decrement: %d\n", x);
+    
+    printf("\n=== Assignment Operations ===\n");
+    x = 10;
+    printf("Initial x: %d\n", x);
+    
+    x += 5;
+    printf("x += 5: %d\n", x);
+    
+    x -= 3;
+    printf("x -= 3: %d\n", x);
+    
+    x *= 2;
+    printf("x *= 2: %d\n", x);
+    
+    x /= 4;
+    printf("x /= 4: %d\n", x);
+}
+
+// Function to demonstrate control structures
+void demonstrate_control() {
+    int i;
+    int sum = 0;
+    
+    printf("\n=== Control Structures ===\n");
+    
+    // If-else statement
+    int num = 15;
+    if (num > 10) {
+        printf("Number %d is greater than 10\n", num);
+    } else {
+        printf("Number %d is not greater than 10\n", num);
+    }
+    
+    // Switch statement
+    int choice = 2;
+    printf("Switch statement with choice %d:\n", choice);
+    switch (choice) {
+        case 1:
+            printf("Choice is 1\n");
+            break;
+        case 2:
+            printf("Choice is 2\n");
+            break;
+        case 3:
+            printf("Choice is 3\n");
+            break;
+        default:
+            printf("Unknown choice\n");
+            break;
+    }
+    
+    // While loop
+    printf("While loop (sum from 1 to 5):\n");
+    i = 1;
+    while (i <= 5) {
+        sum += i;
+        printf("i = %d, sum = %d\n", i, sum);
+        i++;
+    }
+    
+    // For loop
+    printf("For loop (counting down from 5):\n");
+    for (i = 5; i > 0; i--) {
+        printf("Countdown: %d\n", i);
+    }
+    
+    // Do-while loop
+    printf("Do-while loop (example):\n");
+    i = 1;
+    do {
+        printf("Do-while iteration: %d\n", i);
+        i++;
+    } while (i <= 3);
+}
+
+// Function to demonstrate logical operations
+void demonstrate_logical() {
+    int a = 5;
+    int b = 3;
+    int c = 8;
+    
+    printf("\n=== Logical Operations ===\n");
+    
+    if (a > b && b < c) {
+        printf("a > b AND b < c is true\n");
+    }
+    
+    if (a < b || a < c) {
+        printf("a < b OR a < c is true\n");
+    }
+    
+    if (!(a < b)) {
+        printf("NOT(a < b) is true\n");
+    }
+    
+    // Ternary operator
+    int max_val = (a > b) ? a : b;
+    printf("Maximum of %d and %d using ternary: %d\n", a, b, max_val);
+}
+
+// Main function
+int main() {
+    printf("=== Advanced C Compiler Test Program ===\n");
+    printf("Global variable: %d\n", global_var);
+    
+    // Test factorial function
+    int fact_num = 5;
+    result = factorial(fact_num);
+    printf("Factorial of %d is %d\n", fact_num, result);
+    
+    // Test max function
+    int max_result = max(15, 23);
+    printf("Maximum of 15 and 23 is %d\n", max_result);
+    
+    // Test various operations
+    demonstrate_operations();
+    
+    // Test control structures
+    demonstrate_control();
+    
+    // Test logical operations
+    demonstrate_logical();
+    
+    // Test input/output
+    printf("\n=== Input/Output Test ===\n");
+    int user_input;
+    printf("Enter a number: ");
+    scanf("%d", &user_input);
+    printf("You entered: %d\n", user_input);
+    
+    // Test character operations
+    char ch = 'A';
+    printf("Character: %c\n", ch);
+    
+    // Test string
+    printf("String test: Hello World!\n");
+    
+    printf("\n=== Program completed successfully! ===\n");
+    
+    return 0;
+}
+    while (i <= n) {
+        sum += i;
+        i++;
+    }
+    print(sum);        /* 55 */
+
+    /* for: 5! 계산 */
+    int factorial = 1;
+    for (i = 1; i <= 5; i++) {
+        factorial *= i;
+    }
+    print(factorial);  /* 120 */
+
+    /* 중첩 if */
+    int x = 15;
+    if (x > 10) {
+        if (x < 20) {
+            print(2);
+        } else {
+            print(3);
+        }
+    } else {
+        print(4);
+    }
+
+    /* do-while 예시 */
+    int count = 0;
+    do {
+        count++;
+        print(count);
+    } while (count < 3);   /* 1,2,3 */
+
+    return 0;
+}

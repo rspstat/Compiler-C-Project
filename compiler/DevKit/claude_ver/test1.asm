@@ -1,0 +1,4 @@
+START
+CALL main
+HALT
+FUNC main
