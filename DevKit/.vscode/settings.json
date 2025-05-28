@@ -1,9 +1,0 @@
-{
-    "files.associations": {
-        "*.dbclient-js": "javascript",
-        "*.erd": "json",
-        "*.vuerd": "json",
-        "xstring": "c",
-        "xutility": "c"
-    }
-}
