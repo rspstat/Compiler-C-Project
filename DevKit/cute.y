@@ -224,7 +224,7 @@ int main(int argc, char *argv[])
 	if (argc == 2)
 		yyin = fopen(argv[1], "r");
 	else {
-		printf("Usage: cbu2 inputfile\noutput file is 'a.asm'\n");
+		printf("Usage: cbc3 inputfile\noutput file is 'a.asm'\n");
 		return(0);
 		}
 		

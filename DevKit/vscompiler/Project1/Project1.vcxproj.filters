@@ -15,15 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="cbu3.c">
+    <ClCompile Include="cute.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="cbu3lex.c">
+    <ClCompile Include="cutelex.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="cbu3.h">
+    <ClInclude Include="cute.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

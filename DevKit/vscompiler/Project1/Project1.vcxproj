@@ -19,11 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="cbu3.c" />
-    <ClCompile Include="cbu3lex.c" />
+    <ClCompile Include="cute.c" />
+    <ClCompile Include="cutelex.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="cbu3.h" />
+    <ClInclude Include="cute.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

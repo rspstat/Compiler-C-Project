@@ -1,6 +1,6 @@
 %{
 #include <string.h>
-#include "cbu3.h"
+#include "cute.h"
 #define MAXSYM	100
 #define	MAXSYMLEN	20
 
@@ -50,12 +50,12 @@ id	{letter}({letter}|{digit})*
 실행할랭	{return(RUN);}
 마지막에	{return(LAST);}
 아니라면            {return(ELSE);}
-이름이       {return(FUNC);}
+함수이름은       {return(FUNC);}
 이고	{return(AND);}
 인 	{return(IN);}
 선언할랭	{return(INIT);}
 뭐가들었냐면	{return(CONTENT);}
-함수를	{return(FN);}
+함수	{return(FN);}
 반복할랭	{return(LOOP);}
 작다면         {return(LT);}
 크다면         {return(GT);}

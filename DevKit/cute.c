@@ -63,7 +63,7 @@
 
 /* Copy the first part of user declarations.  */
 /* Line 371 of yacc.c  */
-#line 1 "cbu3.y"
+#line 1 "cute.y"
 
 #include <stdio.h>
 #include <string.h>
@@ -141,7 +141,7 @@ int 	count_e_nodes(Node*);
 
 
 /* Line 371 of yacc.c  */
-#line 145 "cbu3.c"
+#line 145 "cute.c"
 
 # ifndef YY_NULL
 #  if defined __cplusplus && 201103L <= __cplusplus
@@ -160,9 +160,9 @@ int 	count_e_nodes(Node*);
 #endif
 
 /* In a future release of Bison, this section will be replaced
-   by #include "cbu3.h".  */
-#ifndef YY_YY_CBU3_H_INCLUDED
-# define YY_YY_CBU3_H_INCLUDED
+   by #include "cute.h".  */
+#ifndef YY_YY_CUTE_H_INCLUDED
+# define YY_YY_CUTE_H_INCLUDED
 /* Enabling traces.  */
 #ifndef YYDEBUG
 # define YYDEBUG 0
@@ -323,12 +323,12 @@ int yyparse ();
 #endif
 #endif /* ! YYPARSE_PARAM */
 
-#endif /* !YY_YY_CBU3_H_INCLUDED  */
+#endif /* !YY_YY_CUTE_H_INCLUDED  */
 
 /* Copy the second part of user declarations.  */
 
 /* Line 390 of yacc.c  */
-#line 332 "cbu3.c"
+#line 332 "cute.c"
 
 #ifdef short
 # undef short
@@ -1688,349 +1688,349 @@ yyreduce:
     {
         case 2:
 /* Line 1792 of yacc.c  */
-#line 88 "cbu3.y"
+#line 88 "cute.y"
     { if (errorcnt==0) {codegen((yyvsp[(2) - (3)])); dwgen();} }
     break;
 
   case 3:
 /* Line 1792 of yacc.c  */
-#line 91 "cbu3.y"
+#line 91 "cute.y"
     {(yyval)=MakeListTree((yyvsp[(1) - (2)]), (yyvsp[(2) - (2)]));}
     break;
 
   case 4:
 /* Line 1792 of yacc.c  */
-#line 92 "cbu3.y"
+#line 92 "cute.y"
     {(yyval)=MakeListTree(NULL, (yyvsp[(1) - (1)]));}
     break;
 
   case 5:
 /* Line 1792 of yacc.c  */
-#line 93 "cbu3.y"
+#line 93 "cute.y"
     { errorcnt++; yyerrok;}
     break;
 
   case 6:
 /* Line 1792 of yacc.c  */
-#line 96 "cbu3.y"
+#line 96 "cute.y"
     { (yyvsp[(1) - (6)])->token = ID2; (yyval)=MakeOPTree(ASSGN, (yyvsp[(1) - (6)]), (yyvsp[(3) - (6)]));}
     break;
 
   case 7:
 /* Line 1792 of yacc.c  */
-#line 97 "cbu3.y"
+#line 97 "cute.y"
     {(yyval)=MakeOPTree(WHILE, (yyvsp[(1) - (6)]), (yyvsp[(3) - (6)]));}
     break;
 
   case 8:
 /* Line 1792 of yacc.c  */
-#line 98 "cbu3.y"
+#line 98 "cute.y"
     { (yyval)=MakeOPTree(TERN, (yyvsp[(1) - (2)]), (yyvsp[(2) - (2)])); }
     break;
 
   case 9:
 /* Line 1792 of yacc.c  */
-#line 99 "cbu3.y"
+#line 99 "cute.y"
     { (yyvsp[(1) - (3)])->token= ID3; (yyval)=MakeOPTree(AA, (yyvsp[(1) - (3)]), (yyvsp[(3) - (3)])); }
     break;
 
   case 10:
 /* Line 1792 of yacc.c  */
-#line 100 "cbu3.y"
+#line 100 "cute.y"
     { (yyvsp[(1) - (3)])->token= ID3; (yyval)=MakeOPTree(SA, (yyvsp[(1) - (3)]), (yyvsp[(3) - (3)])); }
     break;
 
   case 11:
 /* Line 1792 of yacc.c  */
-#line 101 "cbu3.y"
+#line 101 "cute.y"
     { (yyvsp[(1) - (3)])->token= ID3; (yyval)=MakeOPTree(MA, (yyvsp[(1) - (3)]), (yyvsp[(3) - (3)])); }
     break;
 
   case 12:
 /* Line 1792 of yacc.c  */
-#line 102 "cbu3.y"
+#line 102 "cute.y"
     { (yyvsp[(1) - (3)])->token= ID3; (yyval)=MakeOPTree(DA, (yyvsp[(1) - (3)]), (yyvsp[(3) - (3)])); }
     break;
 
   case 13:
 /* Line 1792 of yacc.c  */
-#line 103 "cbu3.y"
+#line 103 "cute.y"
     { (yyval)=MakeOPTree(FUNC, (yyvsp[(6) - (12)]), NULL); }
     break;
 
   case 14:
 /* Line 1792 of yacc.c  */
-#line 104 "cbu3.y"
+#line 104 "cute.y"
     { (yyval)=MakeOPTree(FOR, (yyvsp[(2) - (3)]), (yyvsp[(3) - (3)])); }
     break;
 
   case 15:
 /* Line 1792 of yacc.c  */
-#line 105 "cbu3.y"
+#line 105 "cute.y"
     {(yyvsp[(1) - (3)])->token=ID2; (yyval)=MakeOPTree(SCAN, (yyvsp[(1) - (3)]), NULL);}
     break;
 
   case 16:
 /* Line 1792 of yacc.c  */
-#line 106 "cbu3.y"
+#line 106 "cute.y"
     { (yyval)=MakeOPTree(PRINT, (yyvsp[(1) - (4)]), NULL); }
     break;
 
   case 17:
 /* Line 1792 of yacc.c  */
-#line 107 "cbu3.y"
+#line 107 "cute.y"
     {(yyval)=MakeOPTree(SWAPE, (yyvsp[(1) - (2)]), NULL); }
     break;
 
   case 18:
 /* Line 1792 of yacc.c  */
-#line 108 "cbu3.y"
+#line 108 "cute.y"
     { (yyval)=MakeOPTree(IF_ELSE, (yyvsp[(1) - (2)]), (yyvsp[(2) - (2)])); }
     break;
 
   case 22:
 /* Line 1792 of yacc.c  */
-#line 112 "cbu3.y"
+#line 112 "cute.y"
     { (yyval)=MakeOPTree(SWITCH, (yyvsp[(1) - (2)]), (yyvsp[(2) - (2)])); }
     break;
 
   case 23:
 /* Line 1792 of yacc.c  */
-#line 115 "cbu3.y"
+#line 115 "cute.y"
     { (yyvsp[(1) - (2)])->token=ID6; (yyval)=MakeOPTree(INC, (yyvsp[(1) - (2)]), NULL); }
     break;
 
   case 24:
 /* Line 1792 of yacc.c  */
-#line 116 "cbu3.y"
+#line 116 "cute.y"
     { (yyvsp[(1) - (2)])->token=ID7; (yyval)=MakeOPTree(DEC, (yyvsp[(1) - (2)]), NULL); }
     break;
 
   case 25:
 /* Line 1792 of yacc.c  */
-#line 119 "cbu3.y"
+#line 119 "cute.y"
     {(yyvsp[(2) - (4)])->token=ID4; (yyval)=MakeOPTree(SWITCHH, (yyvsp[(2) - (4)]), (yyvsp[(4) - (4)]));}
     break;
 
   case 26:
 /* Line 1792 of yacc.c  */
-#line 122 "cbu3.y"
+#line 122 "cute.y"
     {(yyval)=MakeListTree((yyvsp[(1) - (2)]), (yyvsp[(2) - (2)])); }
     break;
 
   case 27:
 /* Line 1792 of yacc.c  */
-#line 123 "cbu3.y"
+#line 123 "cute.y"
     {(yyval)=MakeListTree(NULL, (yyvsp[(1) - (1)])); }
     break;
 
   case 28:
 /* Line 1792 of yacc.c  */
-#line 126 "cbu3.y"
+#line 126 "cute.y"
     {(yyval)=MakeOPTree(DEFAULT, (yyvsp[(3) - (4)]), NULL); }
     break;
 
   case 29:
 /* Line 1792 of yacc.c  */
-#line 129 "cbu3.y"
+#line 129 "cute.y"
     {(yyval)=MakeOPTree(CASEH, (yyvsp[(1) - (4)]), (yyvsp[(3) - (4)]));}
     break;
 
   case 30:
 /* Line 1792 of yacc.c  */
-#line 132 "cbu3.y"
+#line 132 "cute.y"
     {(yyval)=MakeOPTree(CASEM, (yyvsp[(3) - (3)]), (yyvsp[(1) - (3)]));}
     break;
 
   case 31:
 /* Line 1792 of yacc.c  */
-#line 135 "cbu3.y"
+#line 135 "cute.y"
     {(yyval)=MakeNode(CASEL,CASEL);}
     break;
 
   case 32:
 /* Line 1792 of yacc.c  */
-#line 138 "cbu3.y"
+#line 138 "cute.y"
     {(yyvsp[(2) - (2)])->token=ID5; (yyval)=MakeOPTree(SWAPH, (yyvsp[(1) - (2)]), (yyvsp[(2) - (2)]));}
     break;
 
   case 33:
 /* Line 1792 of yacc.c  */
-#line 140 "cbu3.y"
+#line 140 "cute.y"
     {(yyvsp[(1) - (3)])->token=ID5; (yyval)=MakeOPTree(SWAPM, (yyvsp[(3) - (3)]), (yyvsp[(2) - (3)]));}
     break;
 
   case 34:
 /* Line 1792 of yacc.c  */
-#line 143 "cbu3.y"
+#line 143 "cute.y"
     {(yyval)=MakeNode(SWAPS,SWAPS);}
     break;
 
   case 35:
 /* Line 1792 of yacc.c  */
-#line 146 "cbu3.y"
+#line 146 "cute.y"
     {(yyval)=MakeOPTree(TSTMT, (yyvsp[(1) - (3)]), (yyvsp[(2) - (3)])); }
     break;
 
   case 36:
 /* Line 1792 of yacc.c  */
-#line 149 "cbu3.y"
+#line 149 "cute.y"
     { (yyval)=MakeOPTree(TEX, (yyvsp[(1) - (5)]), (yyvsp[(2) - (5)])); }
     break;
 
   case 37:
 /* Line 1792 of yacc.c  */
-#line 152 "cbu3.y"
+#line 152 "cute.y"
     {(yyval)=MakeNode(TLVAL, TLVAL);}
     break;
 
   case 38:
 /* Line 1792 of yacc.c  */
-#line 155 "cbu3.y"
+#line 155 "cute.y"
     {(yyvsp[(3) - (3)])->token=t_cond_check((yyvsp[(3) - (3)])->token); (yyvsp[(1) - (3)])->token=ID4; (yyval)=MakeOPTree(TCON, (yyvsp[(1) - (3)]), (yyvsp[(3) - (3)]));}
     break;
 
   case 39:
 /* Line 1792 of yacc.c  */
-#line 157 "cbu3.y"
+#line 157 "cute.y"
     {(yyval)=MakeOPTree(FORSTLI, (yyvsp[(5) - (8)]), (yyvsp[(2) - (8)]));}
     break;
 
   case 40:
 /* Line 1792 of yacc.c  */
-#line 160 "cbu3.y"
+#line 160 "cute.y"
     {(yyvsp[(2) - (2)])->token=f_cond_check((yyvsp[(2) - (2)])->token); (yyval)=MakeOPTree(FORCON, (yyvsp[(1) - (2)]), (yyvsp[(2) - (2)]));}
     break;
 
   case 41:
 /* Line 1792 of yacc.c  */
-#line 162 "cbu3.y"
+#line 162 "cute.y"
     {(yyval)=MakeOPTree(FORSTART, (yyvsp[(1) - (2)]), (yyvsp[(2) - (2)]));}
     break;
 
   case 42:
 /* Line 1792 of yacc.c  */
-#line 165 "cbu3.y"
+#line 165 "cute.y"
     {(yyval)=MakeOPTree(FSTMT, (yyvsp[(2) - (2)]), (yyvsp[(1) - (2)]));}
     break;
 
   case 43:
 /* Line 1792 of yacc.c  */
-#line 167 "cbu3.y"
+#line 167 "cute.y"
     { (yyval)=MakeNode(FLOOPEND, FLOOPEND); }
     break;
 
   case 44:
 /* Line 1792 of yacc.c  */
-#line 169 "cbu3.y"
+#line 169 "cute.y"
     { (yyval)=MakeNode(FUNCEND, FUNCEND); }
     break;
 
   case 45:
 /* Line 1792 of yacc.c  */
-#line 173 "cbu3.y"
+#line 173 "cute.y"
     {(yyval)=MakeNode(CALLBACK, CALLBACK);}
     break;
 
   case 46:
 /* Line 1792 of yacc.c  */
-#line 176 "cbu3.y"
+#line 176 "cute.y"
     {(yyvsp[(1) - (2)])->token=w_cond_check((yyvsp[(1) - (2)])->token); (yyval)=MakeOPTree(LOOPCON, (yyvsp[(2) - (2)]), (yyvsp[(1) - (2)])); }
     break;
 
   case 47:
 /* Line 1792 of yacc.c  */
-#line 178 "cbu3.y"
+#line 178 "cute.y"
     { (yyval)=MakeNode(WLOOPEND, WLOOPEND); }
     break;
 
   case 48:
 /* Line 1792 of yacc.c  */
-#line 181 "cbu3.y"
+#line 181 "cute.y"
     {(yyvsp[(2) - (7)])->token=if_cond_check((yyvsp[(2) - (7)])->token); (yyval)=MakeOPTree(IF, (yyvsp[(2) - (7)]), (yyvsp[(4) - (7)])); }
     break;
 
   case 49:
 /* Line 1792 of yacc.c  */
-#line 185 "cbu3.y"
+#line 185 "cute.y"
     { (yyval)=MakeOPTree(ELSE, (yyvsp[(3) - (6)]), NULL); }
     break;
 
   case 50:
 /* Line 1792 of yacc.c  */
-#line 190 "cbu3.y"
+#line 190 "cute.y"
     { (yyval)=MakeOPTree(EQ, (yyvsp[(1) - (5)]), (yyvsp[(3) - (5)]));}
     break;
 
   case 51:
 /* Line 1792 of yacc.c  */
-#line 191 "cbu3.y"
+#line 191 "cute.y"
     { (yyval)=MakeOPTree(LT, (yyvsp[(1) - (5)]), (yyvsp[(3) - (5)]));}
     break;
 
   case 52:
 /* Line 1792 of yacc.c  */
-#line 192 "cbu3.y"
+#line 192 "cute.y"
     { (yyval)=MakeOPTree(GT, (yyvsp[(1) - (5)]), (yyvsp[(3) - (5)]));}
     break;
 
   case 53:
 /* Line 1792 of yacc.c  */
-#line 193 "cbu3.y"
+#line 193 "cute.y"
     { (yyval)=MakeOPTree(LE, (yyvsp[(1) - (5)]), (yyvsp[(3) - (5)]));}
     break;
 
   case 54:
 /* Line 1792 of yacc.c  */
-#line 194 "cbu3.y"
+#line 194 "cute.y"
     { (yyval)=MakeOPTree(GE, (yyvsp[(1) - (5)]), (yyvsp[(3) - (5)]));}
     break;
 
   case 55:
 /* Line 1792 of yacc.c  */
-#line 195 "cbu3.y"
+#line 195 "cute.y"
     { (yyval)=MakeOPTree(NE, (yyvsp[(1) - (5)]), (yyvsp[(3) - (5)]));}
     break;
 
   case 56:
 /* Line 1792 of yacc.c  */
-#line 200 "cbu3.y"
+#line 200 "cute.y"
     { (yyval)=MakeOPTree(ADD, (yyvsp[(1) - (3)]), (yyvsp[(3) - (3)])); }
     break;
 
   case 57:
 /* Line 1792 of yacc.c  */
-#line 201 "cbu3.y"
+#line 201 "cute.y"
     { (yyval)=MakeOPTree(SUB, (yyvsp[(1) - (3)]), (yyvsp[(3) - (3)])); }
     break;
 
   case 59:
 /* Line 1792 of yacc.c  */
-#line 206 "cbu3.y"
+#line 206 "cute.y"
     { (yyval)=MakeOPTree(MUL, (yyvsp[(1) - (3)]), (yyvsp[(3) - (3)])); }
     break;
 
   case 60:
 /* Line 1792 of yacc.c  */
-#line 207 "cbu3.y"
+#line 207 "cute.y"
     { (yyval)=MakeOPTree(DIV, (yyvsp[(1) - (3)]), (yyvsp[(3) - (3)])); }
     break;
 
   case 62:
 /* Line 1792 of yacc.c  */
-#line 213 "cbu3.y"
+#line 213 "cute.y"
     { /* ID node is created in lex */ }
     break;
 
   case 63:
 /* Line 1792 of yacc.c  */
-#line 214 "cbu3.y"
+#line 214 "cute.y"
     { /* NUM node is created in lex */ }
     break;
 
 
 /* Line 1792 of yacc.c  */
-#line 2034 "cbu3.c"
+#line 2034 "cute.c"
       default: break;
     }
   /* User semantic actions sometimes alter yychar, and that requires
@@ -2262,7 +2262,7 @@ yyreturn:
 
 
 /* Line 2055 of yacc.c  */
-#line 218 "cbu3.y"
+#line 218 "cute.y"
 
 int main(int argc, char *argv[]) 
 {
@@ -2272,7 +2272,7 @@ int main(int argc, char *argv[])
 	if (argc == 2)
 		yyin = fopen(argv[1], "r");
 	else {
-		printf("Usage: cbu2 inputfile\noutput file is 'a.asm'\n");
+		printf("Usage: cbc3 inputfile\noutput file is 'a.asm'\n");
 		return(0);
 		}
 		
