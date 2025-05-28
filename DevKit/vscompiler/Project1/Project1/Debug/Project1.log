@@ -1,0 +1,24 @@
+﻿  cbu3.c
+  cbu3lex.c
+  코드를 생성하고 있습니다...
+\cbu3.y(301,11): warning C4101: 'brother' :참조되지 않은 지역 변수입니다.
+  (소스 파일 'cbu3.c'을(를) 컴파일하는 중)
+  
+\cbu3.l(87,37): warning C4047: '=': 'YYSTYPE'의 간접 참조 수준이 'Node *'과(와) 다릅니다.
+  (소스 파일 'cbu3lex.c'을(를) 컴파일하는 중)
+  
+\cbu3.l(88,40): warning C4047: '=': 'YYSTYPE'의 간접 참조 수준이 'Node *'과(와) 다릅니다.
+  (소스 파일 'cbu3lex.c'을(를) 컴파일하는 중)
+  
+\cbu3.l(89,19): warning C4477: 'sscanf' : 서식 문자열 '%f'에 'float *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int *'입니다.
+  (소스 파일 'cbu3lex.c'을(를) 컴파일하는 중)
+  
+\cbu3.l(89,40): warning C4047: '=': 'YYSTYPE'의 간접 참조 수준이 'Node *'과(와) 다릅니다.
+  (소스 파일 'cbu3lex.c'을(를) 컴파일하는 중)
+  
+C:\Users\win11\Desktop\assignment\vscompiler\Project1\cbu3.l(112,1): warning C4716: 'yywrap': 값을 반환해야 합니다.
+C:\Users\win11\Desktop\assignment\vscompiler\Project1\cbu3.y(369,1): warning C4715: 'w_cond_check': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\Users\win11\Desktop\assignment\vscompiler\Project1\cbu3.y(391,1): warning C4715: 'f_cond_check': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\Users\win11\Desktop\assignment\vscompiler\Project1\cbu3.y(347,1): warning C4715: 'if_cond_check': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\Users\win11\Desktop\assignment\vscompiler\Project1\cbu3.y(413,1): warning C4715: 't_cond_check': 모든 제어 경로에서 값을 반환하지는 않습니다.
+  Project1.vcxproj -> C:\Users\win11\Desktop\assignment\vscompiler\Project1\Debug\Project1.exe
