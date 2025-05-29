@@ -90,20 +90,20 @@ program	: START stmt_list END	{ if (errorcnt==0) {codegen($2); dwgen();} }
 
 stmt_list	: 	stmt_list stmt 	{$$=MakeListTree($1, $2);}
 		|	stmt			{$$=MakeListTree(NULL, $1);}
-		| 	error STMTEND	{ errorcnt++; yyerrok;}
+		| 	error			{ errorcnt++; yyerrok;}
 		;
 
-stmt		: 	ID ASSGN expr THIS SAVE STMTEND	{ $1->token = ID2; $$=MakeOPTree(ASSGN, $1, $3);}
-		|	loop_con LB stmt_list RB LOOP STMTEND	{$$=MakeOPTree(WHILE, $1, $3);}
+stmt		: 	ID ASSGN expr THIS SAVE	{ $1->token = ID2; $$=MakeOPTree(ASSGN, $1, $3);}
+		|	loop_con LB stmt_list RB LOOP	{$$=MakeOPTree(WHILE, $1, $3);}
 		|	t_stmt t_expr 	{ $$=MakeOPTree(TERN, $1, $2); }	
 		|	ID AA expr { $1->token= ID3; $$=MakeOPTree(AA, $1, $3); } 
 		|	ID SA expr { $1->token= ID3; $$=MakeOPTree(SA, $1, $3); }
 		|	ID MA expr { $1->token= ID3; $$=MakeOPTree(MA, $1, $3); }
 		|	ID DA expr { $1->token= ID3; $$=MakeOPTree(DA, $1, $3); }
-		|	FUNC FNAME AND CONTENT LB f_stmt_list RB IN FN THIS INIT STMTEND{ $$=MakeOPTree(FUNC, $6, NULL); }
+		|	FUNC FNAME AND CONTENT LB f_stmt_list RB IN FN THIS INIT { $$=MakeOPTree(FUNC, $6, NULL); }
 		|	FOR for_con for_stmt_list	{ $$=MakeOPTree(FOR, $2, $3); }
 		|	ID VAL SCANF {$1->token=ID2; $$=MakeOPTree(SCAN, $1, NULL);}
-		|	ID VAL PRINTF STMTEND { $$=MakeOPTree(PRINT, $1, NULL); }
+		|	ID VAL PRINTF { $$=MakeOPTree(PRINT, $1, NULL); }
 		|	swap_h SWAP 	{$$=MakeOPTree(SWAPE, $1, NULL); }	
 		|	if_stmt else_stmt { $$=MakeOPTree(IF_ELSE, $1, $2); }
 		| 	if_stmt
@@ -146,7 +146,7 @@ swap_s		:	{$$=MakeNode(SWAPS,SWAPS);}
 t_stmt		:	t_con t_expr ELSE {$$=MakeOPTree(TSTMT, $1, $2); }
 		;
 
-t_expr		:	t_lval expr THIS SAVE STMTEND { $$=MakeOPTree(TEX, $1, $2); }
+t_expr		:	t_lval expr THIS SAVE { $$=MakeOPTree(TEX, $1, $2); }
 		;
 
 t_lval		:	{$$=MakeNode(TLVAL, TLVAL);}
@@ -154,7 +154,7 @@ t_lval		:	{$$=MakeNode(TLVAL, TLVAL);}
 
 t_con		:	ID ASSGN condition {$3->token=t_cond_check($3->token); $1->token=ID4; $$=MakeOPTree(TCON, $1, $3);}
 
-for_stmt_list	:	LAST stmt ING LB stmt_list RB LOOP STMTEND	{$$=MakeOPTree(FORSTLI, $5, $2);}
+for_stmt_list	:	LAST stmt ING LB stmt_list RB LOOP	{$$=MakeOPTree(FORSTLI, $5, $2);}
 		;
 
 for_con		:	for_start condition	{$2->token=f_cond_check($2->token); $$=MakeOPTree(FORCON, $1, $2);}
@@ -169,22 +169,19 @@ floop_end		:	{ $$=MakeNode(FLOOPEND, FLOOPEND); };
 f_end		:	{ $$=MakeNode(FUNCEND, FUNCEND); }
 		;
 
-
-call_back		:	FNAME THIS CALL STMTEND {$$=MakeNode(CALLBACK, CALLBACK);}
+call_back		:	FNAME THIS CALL {$$=MakeNode(CALLBACK, CALLBACK);}
 		;
 
 loop_con		:	condition wloop_end {$1->token=w_cond_check($1->token); $$=MakeOPTree(LOOPCON, $2, $1); };
 
-wloop_end	:	{ $$=MakeNode(WLOOPEND, WLOOPEND); };
-
-
-if_stmt		:	IF condition LB stmt_list RB RUN STMTEND {$2->token=if_cond_check($2->token); $$=MakeOPTree(IF, $2, $4); }
+wloop_end	:	{ $$=MakeNode(WLOOPEND, WLOOPEND); }
 		;
 
-
-else_stmt		:	ELSE LB stmt_list RB RUN STMTEND { $$=MakeOPTree(ELSE, $3, NULL); }
+if_stmt		:	IF condition LB stmt_list RB RUN {$2->token=if_cond_check($2->token); $$=MakeOPTree(IF, $2, $4); }
 		;
 
+else_stmt		:	ELSE LB stmt_list RB RUN { $$=MakeOPTree(ELSE, $3, NULL); }
+		;
 
 
 condition      	 :    expr IS expr WA EQ { $$=MakeOPTree(EQ, $1, $3);}
@@ -308,15 +305,16 @@ void DFSTree(Node * n)
 			}
 		}
 	}
-	if(n->token == WHILE) {
+
+	if(n->token == WHILE) 
 		inner_w_cnt = count_while_nodes(n->son);
-	}
-	if(n->token == FOR) {
+	
+	if(n->token == FOR) 
 		inner_f_cnt = count_f_nodes(n->son);
-	}
-	if(n->token == ELSE) {
+	
+	if(n->token == ELSE) 
 		inner_e_cnt = count_e_nodes(n->son);
-	}
+	
 	prtcode(n->token, n->tokenval);
 	DFSTree(n->brother);
 	
@@ -324,103 +322,53 @@ void DFSTree(Node * n)
 
 int if_cond_check(int token) 
 {
-	if (token == EQ) {
-		return IF_EQ;
-	}
-	if (token == LT) {
-		return IF_LT;
-	} 
-	if (token == LE) {
-		return IF_LE;
-	} 
-	if (token == GT) {
-		return IF_GT;
-	} 
-	if (token == GE) {
-		return IF_GE;
-	} 
-	if (token == NE) {
-		return IF_NE;
-	}  
+	if (token == EQ) return IF_EQ;
+	if (token == LT) return IF_LT;
+	if (token == LE) return IF_LE;
+	if (token == GT) return IF_GT;
+	if (token == GE) return IF_GE;
+	if (token == NE) return IF_NE;
 }
 
 int w_cond_check(int token) 
 {
-	if (token == EQ) {
-		return W_EQ;
-	}
-	if (token == LT) {
-		return W_LT;
-	} 
-	if (token == LE) {
-		return W_LE;
-	} 
-	if (token == GT) {
-		return W_GT;
-	} 
-	if (token == GE) {
-		return W_GE;
-	} 
-	if (token == NE) {
-		return W_NE;
-	}  
+	if (token == EQ) return W_EQ;
+	if (token == LT) return W_LT;
+	if (token == LE) return W_LE;
+	if (token == GT) return W_GT;
+	if (token == GE) return W_GE;
+	if (token == NE) return W_NE;
 }
 
 int f_cond_check(int token) 
 {
-	if (token == EQ) {
-		return F_EQ;
-	}
-	if (token == LT) {
-		return F_LT;
-	} 
-	if (token == LE) {
-		return F_LE;
-	} 
-	if (token == GT) {
-		return F_GT;
-	} 
-	if (token == GE) {
-		return F_GE;
-	} 
-	if (token == NE) {
-		return F_NE;
-	}  
+	if (token == EQ) return F_EQ;
+	if (token == LT) return F_LT;
+	if (token == LE) return F_LE;
+	if (token == GT) return F_GT;
+	if (token == GE) return F_GE;
+	if (token == NE) return F_NE;
 }
 
 int t_cond_check(int token) 
 {
-	if (token == EQ) {
-		return T_EQ;
-	}
-	if (token == LT) {
-		return T_LT;
-	} 
-	if (token == LE) {
-		return T_LE;
-	} 
-	if (token == GT) {
-		return T_GT;
-	} 
-	if (token == GE) {
-		return T_GE;
-	} 
-	if (token == NE) {
-		return T_NE;
-	}  
+	if (token == EQ) return T_EQ;
+	if (token == LT) return T_LT;
+	if (token == LE) return T_LE;
+	if (token == GT) return T_GT;
+	if (token == GE) return T_GE;
+	if (token == NE) return T_NE;
 }
 
 int count_if_nodes(Node *n) {
-    if (n == NULL) {
+    if (n == NULL) 
         return 0;
-    }
     
     int count = 0;
     
-    if (n->token == IF) {
+    if (n->token == IF) 
         count++;
-    }
-    
+
     count += count_if_nodes(n->son);
     count += count_if_nodes(n->brother);
     
@@ -428,16 +376,14 @@ int count_if_nodes(Node *n) {
 }
 
 int count_while_nodes(Node *n) {
-    if (n == NULL) {
+    if (n == NULL) 
         return 0;
-    }
     
     int count = 0;
     
-    if (n->token == WHILE) {
+    if (n->token == WHILE) 
         count++;
-    }
-
+    
     count += count_while_nodes(n->son);
     count += count_while_nodes(n->brother);
     
@@ -445,15 +391,14 @@ int count_while_nodes(Node *n) {
 }
 
 int count_f_nodes(Node *n) {
-    if (n == NULL) {
+    if (n == NULL) 
         return 0;
-    }
+    
     
     int count = 0;
     
-    if (n->token == FOR) {
+    if (n->token == FOR) 
         count++;
-    }
 
     count += count_f_nodes(n->son);
     count += count_f_nodes(n->brother);
@@ -462,15 +407,14 @@ int count_f_nodes(Node *n) {
 }
 
 int count_e_nodes(Node *n) {
-    if (n == NULL) {
+    if (n == NULL) 
         return 0;
-    }
+    
     
     int count = 0;
     
-    if (n->token == ELSE) {
+    if (n->token == ELSE) 
         count++;
-    }
 
     count += count_e_nodes(n->son);
     count += count_e_nodes(n->brother);
@@ -744,7 +688,6 @@ void prtcode(int token, int val)
 		break;
 	};
 }
-
 
 
 /*

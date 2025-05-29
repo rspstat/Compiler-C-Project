@@ -11,7 +11,7 @@ typedef struct nodeType {
 	int tokenval;
 	struct nodeType *son;
 	struct nodeType *brother;
-	} Node;
+} Node;
 
 char symtbl[MAXSYM][MAXSYMLEN];
 int lineno=1;
@@ -19,6 +19,7 @@ int insertsym(char *s);
 int maxsym=0;
 char s[MAXSYMLEN];
 int temp;
+
 Node * MakeNode(int, int);
 
 %}
@@ -26,19 +27,20 @@ sp		[ \t]
 ws		{sp}+
 nl		\n
 eletter	[A-Za-z]
+hletter		[\xb0-\xfe][\xa0-\xfe]
 letter	({eletter})
 digit	[0-9]
 id	{letter}({letter}|{digit})*
 %%
 {ws}	{/* do nothing */}
-{nl}	{lineno++; }
+{nl}	{lineno++;}
 \+|더하기|더할랭		{return(ADD); }
 \-|빼기|뺄랭		{return(SUB); }
 에		{return(ASSGN);}
 을|를		{return(THIS);}
 "*"|곱하기|곱할랭             {return(MUL);}
 "/"|나누기|나눌랭             {return(DIV);}
-고마웡		{return(STMTEND); }
+;			  {return(STMTEND);}
 요기부터           {return(LB);}
 요기까지             {return(RB);}
 하면서		{return(ING);}
@@ -69,7 +71,7 @@ id	{letter}({letter}|{digit})*
 "*="	  {return(MA);}
 "/="	  {return(DA);}
 일단은	{return(FOR);}
-"입력 받아줭"	{return(SCANF);}
+"입력받아줭"	{return(SCANF);}
 :	{return(COLON);}
 "++"	{return(INC);}
 "--"	{return(DEC);}
@@ -82,7 +84,7 @@ id	{letter}({letter}|{digit})*
 "다 아닌경우엔"	{return(DEFAULT);}
 "여러 경우가 있엉"	{return(SWITCH);}
 "시작할랭"	{return(START);}
-"끝낼랭"	{return(END); }
+"고마웡"	{return(END); }
 func_{letter}+	{return(FNAME);}
 {id}	{temp=insertsym(yytext); yylval=MakeNode(ID, temp); return(ID);}
 -?{digit}+		{sscanf(yytext, "%d", &temp); yylval=MakeNode(NUM, temp); return(NUM);}
