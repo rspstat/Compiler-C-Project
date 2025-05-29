@@ -27,7 +27,7 @@ sp		[ \t]
 ws		{sp}+
 nl		\n
 eletter	[A-Za-z]
-hletter		[\xb0-\xfe][\xa0-\xfe]
+hletter	[\xb0-\xfe][\xa0-\xfe]
 letter	({eletter})
 digit	[0-9]
 id	{letter}({letter}|{digit})*

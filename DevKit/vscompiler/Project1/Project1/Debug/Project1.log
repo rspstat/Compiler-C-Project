@@ -1,8 +1,8 @@
 ﻿  cute.c
+  cutelex.c
 \cute.y(298,11): warning C4101: 'brother' :참조되지 않은 지역 변수입니다.
   (소스 파일 'cute.c'을(를) 컴파일하는 중)
   
-  cutelex.c
 \cute.l(89,37): warning C4047: '=': 'YYSTYPE'의 간접 참조 수준이 'Node *'과(와) 다릅니다.
   (소스 파일 'cutelex.c'을(를) 컴파일하는 중)
   
@@ -16,18 +16,9 @@
   (소스 파일 'cutelex.c'을(를) 컴파일하는 중)
   
   코드를 생성하고 있습니다...
-<<<<<<< HEAD
 C:\Users\win11\Desktop\assignment\compiler\DevKit\vscompiler\Project1\cute.l(114,1): warning C4716: 'yywrap': 값을 반환해야 합니다.
 C:\Users\win11\Desktop\assignment\compiler\DevKit\vscompiler\Project1\cute.y(333,1): warning C4715: 'if_cond_check': 모든 제어 경로에서 값을 반환하지는 않습니다.
-C:\Users\win11\Desktop\assignment\compiler\DevKit\vscompiler\Project1\cute.y(353,1): warning C4715: 'f_cond_check': 모든 제어 경로에서 값을 반환하지는 않습니다.
 C:\Users\win11\Desktop\assignment\compiler\DevKit\vscompiler\Project1\cute.y(343,1): warning C4715: 'w_cond_check': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\Users\win11\Desktop\assignment\compiler\DevKit\vscompiler\Project1\cute.y(353,1): warning C4715: 'f_cond_check': 모든 제어 경로에서 값을 반환하지는 않습니다.
 C:\Users\win11\Desktop\assignment\compiler\DevKit\vscompiler\Project1\cute.y(363,1): warning C4715: 't_cond_check': 모든 제어 경로에서 값을 반환하지는 않습니다.
   Project1.vcxproj -> C:\Users\win11\Desktop\assignment\compiler\DevKit\vscompiler\Project1\Debug\Project1.exe
-=======
-C:\Users\win11\Desktop\assignment\Compiler\DevKit\vscompiler\Project1\cute.l(112,1): warning C4716: 'yywrap': 값을 반환해야 합니다.
-C:\Users\win11\Desktop\assignment\Compiler\DevKit\vscompiler\Project1\cute.y(369,1): warning C4715: 'w_cond_check': 모든 제어 경로에서 값을 반환하지는 않습니다.
-C:\Users\win11\Desktop\assignment\Compiler\DevKit\vscompiler\Project1\cute.y(347,1): warning C4715: 'if_cond_check': 모든 제어 경로에서 값을 반환하지는 않습니다.
-C:\Users\win11\Desktop\assignment\Compiler\DevKit\vscompiler\Project1\cute.y(391,1): warning C4715: 'f_cond_check': 모든 제어 경로에서 값을 반환하지는 않습니다.
-C:\Users\win11\Desktop\assignment\Compiler\DevKit\vscompiler\Project1\cute.y(413,1): warning C4715: 't_cond_check': 모든 제어 경로에서 값을 반환하지는 않습니다.
-  Project1.vcxproj -> C:\Users\win11\Desktop\assignment\Compiler\DevKit\vscompiler\Project1\Debug\Project1.exe
->>>>>>> 8a55e22bb33c9396a35f14e4f11d570926295e26

@@ -1,19 +1,18 @@
 {
   "Version": 1,
-<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\win11\\Desktop\\assignment\\compiler\\DevKit\\vscompiler\\Project1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4E09C0F7-91DB-4F8F-B0D6-58EF295C2064}|Project1.vcxproj|C:\\Users\\win11\\Desktop\\assignment\\compiler\\DevKit\\vscompiler\\Project1\\cute.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4E09C0F7-91DB-4F8F-B0D6-58EF295C2064}|Project1.vcxproj|solutionrelative:cute.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{4E09C0F7-91DB-4F8F-B0D6-58EF295C2064}|Project1.vcxproj|C:\\Users\\win11\\Desktop\\assignment\\compiler\\DevKit\\vscompiler\\Project1\\cute.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4E09C0F7-91DB-4F8F-B0D6-58EF295C2064}|Project1.vcxproj|solutionrelative:cute.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4E09C0F7-91DB-4F8F-B0D6-58EF295C2064}|Project1.vcxproj|C:\\Users\\win11\\Desktop\\assignment\\compiler\\DevKit\\vscompiler\\Project1\\cutelex.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4E09C0F7-91DB-4F8F-B0D6-58EF295C2064}|Project1.vcxproj|solutionrelative:cutelex.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E09C0F7-91DB-4F8F-B0D6-58EF295C2064}|Project1.vcxproj|C:\\Users\\win11\\Desktop\\assignment\\compiler\\DevKit\\vscompiler\\Project1\\cute.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4E09C0F7-91DB-4F8F-B0D6-58EF295C2064}|Project1.vcxproj|solutionrelative:cute.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{4E09C0F7-91DB-4F8F-B0D6-58EF295C2064}|Project1.vcxproj|C:\\Users\\win11\\Desktop\\assignment\\compiler\\DevKit\\vscompiler\\Project1\\cute.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4E09C0F7-91DB-4F8F-B0D6-58EF295C2064}|Project1.vcxproj|solutionrelative:cute.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\win11\\Desktop\\assignment\\vscompiler\\Project1\\cbu3lex.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
@@ -23,21 +22,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\win11\\Desktop\\assignment\\vscompiler\\Project1\\cbu3.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-=======
-  "WorkspaceRootPath": "C:\\Users\\win11\\Desktop\\assignment\\Compiler\\DevKit\\vscompiler\\Project1\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{4E09C0F7-91DB-4F8F-B0D6-58EF295C2064}|Project1.vcxproj|C:\\Users\\win11\\Desktop\\assignment\\Compiler\\DevKit\\vscompiler\\Project1\\cutelex.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4E09C0F7-91DB-4F8F-B0D6-58EF295C2064}|Project1.vcxproj|solutionrelative:cutelex.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E09C0F7-91DB-4F8F-B0D6-58EF295C2064}|Project1.vcxproj|C:\\Users\\win11\\Desktop\\assignment\\Compiler\\DevKit\\vscompiler\\Project1\\cute.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4E09C0F7-91DB-4F8F-B0D6-58EF295C2064}|Project1.vcxproj|solutionrelative:cute.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E09C0F7-91DB-4F8F-B0D6-58EF295C2064}|Project1.vcxproj|C:\\Users\\win11\\Desktop\\assignment\\Compiler\\DevKit\\vscompiler\\Project1\\cute.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4E09C0F7-91DB-4F8F-B0D6-58EF295C2064}|Project1.vcxproj|solutionrelative:cute.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
->>>>>>> 8a55e22bb33c9396a35f14e4f11d570926295e26
     }
   ],
   "DocumentGroupContainers": [
@@ -47,72 +31,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "cute.c",
-              "DocumentMoniker": "C:\\Users\\win11\\Desktop\\assignment\\Compiler\\DevKit\\vscompiler\\Project1\\cute.c",
-              "RelativeDocumentMoniker": "cute.c",
-              "ToolTip": "C:\\Users\\win11\\Desktop\\assignment\\Compiler\\DevKit\\vscompiler\\Project1\\cute.c",
-              "RelativeToolTip": "cute.c",
-              "ViewState": "AgIAAOEKAAAAAAAAAAAswAcLAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-05-29T06:57:22.258Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-<<<<<<< HEAD
               "Title": "cutelex.c",
               "DocumentMoniker": "C:\\Users\\win11\\Desktop\\assignment\\compiler\\DevKit\\vscompiler\\Project1\\cutelex.c",
               "RelativeDocumentMoniker": "cutelex.c",
               "ToolTip": "C:\\Users\\win11\\Desktop\\assignment\\compiler\\DevKit\\vscompiler\\Project1\\cutelex.c",
               "RelativeToolTip": "cutelex.c",
-              "ViewState": "AgIAAO0IAAAAAAAAAAAgwCYJAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAOwIAAAAAAAAAAAcwCYJAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-05-29T08:42:16.039Z",
-=======
-              "Title": "cute.h",
-              "DocumentMoniker": "C:\\Users\\win11\\Desktop\\assignment\\Compiler\\DevKit\\vscompiler\\Project1\\cute.h",
-              "RelativeDocumentMoniker": "cute.h",
-              "ToolTip": "C:\\Users\\win11\\Desktop\\assignment\\Compiler\\DevKit\\vscompiler\\Project1\\cute.h",
-              "RelativeToolTip": "cute.h",
-              "ViewState": "AgIAAJ0AAAAAAAAAAAAswMMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-29T06:57:05.125Z",
->>>>>>> 8a55e22bb33c9396a35f14e4f11d570926295e26
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-<<<<<<< HEAD
+              "DocumentIndex": 2,
               "Title": "cute.h",
               "DocumentMoniker": "C:\\Users\\win11\\Desktop\\assignment\\compiler\\DevKit\\vscompiler\\Project1\\cute.h",
               "RelativeDocumentMoniker": "cute.h",
               "ToolTip": "C:\\Users\\win11\\Desktop\\assignment\\compiler\\DevKit\\vscompiler\\Project1\\cute.h",
               "RelativeToolTip": "cute.h",
-              "ViewState": "AgIAAIwAAAAAAAAAAAAgwJ8AAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAcwMMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-29T08:42:10.93Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "cute.c",
               "DocumentMoniker": "C:\\Users\\win11\\Desktop\\assignment\\compiler\\DevKit\\vscompiler\\Project1\\cute.c",
               "RelativeDocumentMoniker": "cute.c",
               "ToolTip": "C:\\Users\\win11\\Desktop\\assignment\\compiler\\DevKit\\vscompiler\\Project1\\cute.c",
               "RelativeToolTip": "cute.c",
-              "ViewState": "AgIAAJYKAAAAAAAAAAAgwM0KAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJUKAAAAAAAAAAAcwM0KAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-05-29T08:42:05.405Z",
               "EditorCaption": ""
@@ -139,8 +94,7 @@
               "RelativeToolTip": "..\\..\\..\\..\\vscompiler\\Project1\\cbu3lex.c",
               "ViewState": "AgIAAPAIAAAAAAAAAAAgwCkJAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-05-28T15:04:18.311Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T15:04:18.311Z"
             },
             {
               "$type": "Document",
@@ -153,17 +107,6 @@
               "ViewState": "AgIAANAKAAAAAAAAAAAgwAcLAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-05-28T14:00:44.131Z"
-=======
-              "Title": "cutelex.c",
-              "DocumentMoniker": "C:\\Users\\win11\\Desktop\\assignment\\Compiler\\DevKit\\vscompiler\\Project1\\cutelex.c",
-              "RelativeDocumentMoniker": "cutelex.c",
-              "ToolTip": "C:\\Users\\win11\\Desktop\\assignment\\Compiler\\DevKit\\vscompiler\\Project1\\cutelex.c",
-              "RelativeToolTip": "cutelex.c",
-              "ViewState": "AgIAAAEJAAAAAAAAAAAswB8JAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-05-29T05:07:09.193Z",
-              "EditorCaption": ""
->>>>>>> 8a55e22bb33c9396a35f14e4f11d570926295e26
             }
           ]
         }
