@@ -736,7 +736,7 @@ typedef struct nodeType {
 	int tokenval;
 	struct nodeType *son;
 	struct nodeType *brother;
-	} Node;
+} Node;
 
 char symtbl[MAXSYM][MAXSYMLEN];
 int lineno=1;
