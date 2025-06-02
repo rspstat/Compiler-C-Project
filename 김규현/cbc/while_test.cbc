@@ -1,0 +1,10 @@
+시작할랭
+    counter에 0을 저장할랭
+    result에 1을 저장할랭
+    
+    counter가 5보다 작다면 요기부터
+        result *= 2
+        result의 값을 출력할랭
+        counter++
+    요기까지 반복할랭
+고마웡
