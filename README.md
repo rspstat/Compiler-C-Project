@@ -1,5 +1,5 @@
 # Compiler
 
-C Project
+C Compiler Project
 
-<img width="401" height="144" alt="image" src="https://github.com/user-attachments/assets/b0a38070-e5e9-4ad1-b491-0a545f9b2817" />
+<img width="413" height="145" alt="image" src="https://github.com/user-attachments/assets/4f9901fc-fff9-4efa-9f51-464432551dfe" />
